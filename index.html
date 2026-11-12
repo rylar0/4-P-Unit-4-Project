@@ -1,13 +1,13 @@
 <!--Unit 4 Project
 Requirements
-[ ] Three Distinct CSS font-family Declarations
-[ ] Five CSS Rules
-[ ] An Unordered **or** Ordered List (<ul> or <ol>)
-[ ] Three Images
+[ Yes ] Three Distinct CSS font-family Declarations
+[ Yes ] Five CSS Rules
+[ Yes ] An Unordered **or** Ordered List (<ul> or <ol>)
+[ Yes ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Fill Text with Image Background 
-[ no ] Feature 2 - Change the <li> markers
+[ Yes ] Feature 1 - Fill Text with Image Background 
+[ Yes ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
 [ no ] Feature 4 - Use Google Font or Uploaded Font
 [ no ] Feature 5 - Change the Cursor
@@ -19,25 +19,43 @@ Select ONE Additional Feature to Add
 <head>
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
   <style>
 
 #RUDO { font-family: Verdana }
 
-#ZANKA { font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif }
+#ZANKA { font-family: "Redaction 50", serif; }
 
-3.
+#RIYO {   font-family: "JetBrains Mono", monospace; }
 
-4.
+p {
+ color: transparent;
+  background-image: url(https://m.media-amazon.com/images/M/MV5BZDU5ZmEzODYtMDU2OS00NTZiLTk4MWYtYWUyZWUzNGU2ODdjXkEyXkFqcGc@._V1_.jpg);
+  background-clip: text;
+}
 
-5.
+h1 {
+  color: white;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJDj9rezZZQws1ATWxEzoAz7SOV0iTfHx-C1irBWFPLQ&s=10);
+  background-clip:border-box ;
+}
+
+li::marker {
+content: "🗑️";
+font-size: 1.2em;
+}
 
   </style>
 </head>
 <body>
 
   <h1>My Top 3 Favorite Gachiakuta Episodes!</h1>
-  
-
+ 
+  <p>Slight spoiler warning!!! But I tried to be as vague as I could</p>
 
   <h3 id="RUDO">Episode 1: Tenkai and Episode 2: Yadori-mono</h3>
   <hr>
@@ -60,21 +78,36 @@ Select ONE Additional Feature to Add
   <h3 id="ZANKA">Episode 13: Utsuro no Hitomi</h3>
   <hr>
   <p id="ZANKA">THIS EPISODE IS SO GOOD!!!!!!!!!!!!!!!!!!
-    <br>
+    <br>This episode is a highly rated one for a reason okayyy
+    <br>It's so interesting and you get so invested
   </p>
   <img
   src="https://i.pinimg.com/236x/83/b6/f0/83b6f081c94e82f0e63339aefa1f3284.jpg";
   >
   <br><br>
 
-  <h3>Episode 7: Ketcchaku</h3>
+  <h3 id="RIYO">Episode 7: Ketcchaku</h3>
   <hr>
-  <p id="RIYO">About Content Element #3</p>
+  <p id="RIYO">This episode is peak because it's so good at showcasing the characters abilities and synergy with each other!!!!!!!
+    <br>The fighting is so coolll!
+  </p>
    <img
   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxRmhZIzV-iWR789PHhLE1eZTxZJ_8KHHyHdgX8PYFAm769WmtYAKSQJ9&s=10";
   width="200";
   >
   <br><br>
+
+<h3>Reasons why you should watch Gachiakuta:</h3>
+
+<ol>
+  <li>Its so cool</li>
+  <li>Its straight trash</li>
+  <li>Rudo</li>
+  <li>Funky</li>
+  <li>It needs more recognition because its so good</li>
+  <li>Animation and art quality</li>
+  <li>shiggles?</li>
+</ol>
 
 </body>
 </html>
